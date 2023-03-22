@@ -58,15 +58,15 @@ pl.show()
 # histogram and 2D colorplot of aperture field (imshow) if plot_a = 'y').
 #####################################
 
-aperature = np.zeros((img.shape[1], img.shape[2]))
+aperture = np.zeros((img.shape[1], img.shape[2]))
 
 for j in range(img.shape[1]):
     for i in range(img.shape[2]):
-        aperature[j, i] = np.count_nonzero(img[:, j, i] == 0)
+        aperture[j, i] = np.count_nonzero(img[:, j, i] == 0)
         
-plt.hist(aperature.flatten())
+plt.hist(aperture.flatten())
 
 plt.figure(dpi=500)
-plt.imshow(aperature)
+plt.imshow(aperture)
 plt.colorbar()
 
