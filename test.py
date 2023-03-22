@@ -5,8 +5,7 @@ import nbconvert
 # Assignment-specific packages
 import numpy as np
 import pandas as pd
-import pyvista as pv
-import matplotlib.pyplot as plt
+
 # Convert the assignment Jupyter notebooks into something we can import
 
 
