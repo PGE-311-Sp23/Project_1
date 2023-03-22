@@ -1,0 +1,15 @@
+env:
+    ASSIGNMENT: test_assignment
+on: push
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Conda environment from environment.yml
+        uses: mamba-org/provision-with-micromamba@main
+    
+      - name: Run Tests
+        shell: bash -l {0}
+        run: python -m unittest test.py -vvv
