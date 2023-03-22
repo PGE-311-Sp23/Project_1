@@ -9,7 +9,7 @@ import pandas as pd
 
 
 # Import the converted file. Best to import only the variables you want to test
-from Project_1 import aperture_statistics, aperture_mean, roughness_coeff, tortuosity, perm
+from project1 import aperture_statistics, aperture_mean, roughness_coeff, tortuosity, perm
 
 # Here is where you will write your tests
 class TestSolution(unittest.TestCase):
